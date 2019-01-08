@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="958.0" prefWidth="1574.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.payroll_mgts.controller.AttendenceController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/payroll_mgts/style/attendence.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtF_Name" labelFloat="true" layoutX="446.0" layoutY="344.0" opacity="0.91" prefHeight="28.0" prefWidth="164.0" promptText="First Name">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtL_Name" labelFloat="true" layoutX="630.0" layoutY="344.0" opacity="0.91" prefHeight="28.0" prefWidth="189.0" promptText="Last Name">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="443.0" layoutY="296.0" prefHeight="34.0" prefWidth="180.0" text="Employee  Name     :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEmployeeID" labelFloat="true" layoutX="233.0" layoutY="296.0" onAction="#txtEmployeeIDOnAction" opacity="0.91" prefHeight="28.0" prefWidth="164.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="66.0" layoutY="296.0" prefHeight="34.0" prefWidth="155.0" text="Employee  ID   :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtLevelID" labelFloat="true" layoutX="948.0" layoutY="301.0" opacity="0.7" prefHeight="28.0" prefWidth="180.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="852.0" layoutY="299.0" prefHeight="31.0" prefWidth="92.0" text="Level ID  :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtDate" labelFloat="true" layoutX="1289.0" layoutY="299.0" opacity="0.7" prefHeight="28.0" prefWidth="180.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="1205.0" layoutY="296.0" prefHeight="34.0" prefWidth="71.0" text="Date  :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAttendanceID" labelFloat="true" layoutX="271.0" layoutY="501.0" opacity="0.91" prefHeight="28.0" prefWidth="201.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="86.0" layoutY="503.0" prefHeight="34.0" prefWidth="190.0" text="Attendance  ID  :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOverTime" labelFloat="true" layoutX="247.0" layoutY="793.0" opacity="0.7" prefHeight="28.0" prefWidth="214.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="71.0" layoutY="798.0" prefHeight="31.0" prefWidth="180.0" text="OTHours    :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtLateHours" labelFloat="true" layoutX="246.0" layoutY="870.0" opacity="0.7" prefHeight="28.0" prefWidth="214.0">
+         <font>
+            <Font name="Cambria Italic" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="76.0" layoutY="873.0" prefHeight="31.0" prefWidth="180.0" text="Late Hours              :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="663.0" prefHeight="34.0" prefWidth="180.0" text="No Pay                       :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="736.0" prefHeight="34.0" prefWidth="180.0" text="Half Leave                 :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtInTime" layoutX="149.0" layoutY="568.0" prefHeight="42.0" prefWidth="112.0" />
+      <JFXTextField fx:id="txtOutTime" layoutX="360.0" layoutY="568.0" prefHeight="42.0" prefWidth="112.0" />
+      <Label layoutX="796.0" layoutY="530.0" prefHeight="31.0" prefWidth="316.0" text="Present No Of Days  for Current Month  :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="797.0" layoutY="602.0" prefHeight="31.0" prefWidth="309.0" text="Half Leaves  for Current Month               :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="799.0" layoutY="662.0" prefHeight="31.0" prefWidth="300.0" text="No Pays For Current Month                    :" textFill="#222020">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtPresentDays" layoutX="1112.0" layoutY="533.0" prefHeight="25.0" prefWidth="119.0" />
+      <JFXTextField fx:id="txtHalfLeaves" layoutX="1112.0" layoutY="605.0" prefHeight="25.0" prefWidth="119.0" />
+      <JFXTextField fx:id="txtNoPay" layoutX="1112.0" layoutY="665.0" prefHeight="25.0" prefWidth="119.0" />
+      <JFXButton fx:id="btnCancel" buttonType="RAISED" layoutX="1070.0" layoutY="834.0" onAction="#btnCancelOnAction" prefHeight="42.0" prefWidth="149.0" style="-fx-background-color: red; -fx-background-radius: 30;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" buttonType="RAISED" layoutX="725.0" layoutY="833.0" onAction="#btnSaveOnActon" prefHeight="42.0" prefWidth="139.0" style="-fx-background-color: blue; -fx-background-radius: 30;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="77.0" layoutY="583.0" prefHeight="31.0" prefWidth="92.0" text="  IN     :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="285.0" layoutY="581.0" prefHeight="34.0" prefWidth="71.0" text="OUT    :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnNoPay" buttonType="RAISED" layoutX="357.0" layoutY="664.0" onAction="#btnNoPayOnActon" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #90caf9; -fx-background-radius: 30;" text="No Pay">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnHalfLeave" buttonType="RAISED" layoutX="357.0" layoutY="737.0" onAction="#btnHalfLeaveOnAction" prefHeight="25.0" prefWidth="112.0" style="-fx-background-color: #90caf9; -fx-background-radius: 30;" text="Half Leave">
+         <font>
+            <Font name="Times New Roman" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="898.0" layoutY="834.0" onAction="#btnUpdateOnActon" prefHeight="42.0" prefWidth="139.0" style="-fx-background-color: green; -fx-background-radius: 30;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSearch" buttonType="RAISED" layoutX="560.0" layoutY="829.0" onAction="#btnSearchOnActon" prefHeight="51.0" prefWidth="139.0" style="-fx-background-color: #dbdb11; -fx-background-radius: 30;" text="Search" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClearAll" buttonType="RAISED" layoutX="1259.0" layoutY="834.0" onAction="#btnClearAllOnActon" prefHeight="42.0" prefWidth="139.0" style="-fx-background-color: purple; -fx-background-radius: 30;" text="Clear All" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Pane layoutX="383.0" layoutY="46.0" prefHeight="51.0" prefWidth="901.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="287.0" layoutY="5.0" prefHeight="42.0" prefWidth="327.0" text="Manage Attendence" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="218.0" prefHeight="34.0" prefWidth="406.0" style="-fx-background-color: blue; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="109.0" layoutY="2.0" prefHeight="26.0" prefWidth="189.0" text="Employee Details" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="71.0" layoutY="439.0" prefHeight="34.0" prefWidth="406.0" style="-fx-background-color: blue; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="126.0" layoutY="1.0" prefHeight="27.0" prefWidth="155.0" text="Attendance" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="771.0" layoutY="439.0" prefHeight="34.0" prefWidth="406.0" style="-fx-background-color: blue; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="109.0" layoutY="2.0" prefHeight="26.0" prefWidth="189.0" text="Other Details" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

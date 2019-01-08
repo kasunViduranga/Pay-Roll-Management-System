@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="958.0" prefWidth="1574.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.payroll_mgts.controller.SalaryController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/payroll_mgts/style/salary.css" />
+    </stylesheets>
+   <children>
+      <Pane layoutX="393.0" layoutY="55.0" prefHeight="51.0" prefWidth="901.0" style="-fx-background-color: #7bd119; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="219.0" layoutY="5.0" prefHeight="42.0" prefWidth="463.0" text="Manage Salary &amp; Allowances" underline="true">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="156.0" layoutY="286.0" prefHeight="32.0" prefWidth="131.0" text="Basic Salary  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="582.0" layoutY="285.0" prefHeight="34.0" prefWidth="124.0" text="Attendance  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="367.0" prefHeight="34.0" prefWidth="91.0" text="Medical  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAttendance" layoutX="763.0" layoutY="284.0" prefHeight="25.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="999.0" layoutY="285.0" prefHeight="34.0" prefWidth="66.0" text="Food  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtFood" layoutX="1091.0" layoutY="288.0" prefHeight="25.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="586.0" layoutY="367.0" prefHeight="34.0" prefWidth="105.0" text="Transport  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtMedical" layoutX="318.0" layoutY="370.0" prefHeight="25.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTransport" layoutX="763.0" layoutY="370.0" prefHeight="25.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtBasicSalary" layoutX="326.0" layoutY="288.0" prefHeight="28.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="981.0" layoutY="367.0" prefHeight="34.0" prefWidth="149.0" text="Over Time(OT)  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtOT" layoutX="1161.0" layoutY="366.0" prefHeight="25.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="164.0" layoutY="444.0" prefHeight="34.0" prefWidth="66.0" text="EPF  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEPF" layoutX="275.0" layoutY="447.0" prefHeight="28.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTotalAllowences" labelFloat="true" layoutX="763.0" layoutY="442.0" prefHeight="32.0" prefWidth="193.0">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="582.0" layoutY="446.0" prefHeight="34.0" prefWidth="174.0" text="Total Allowences  :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="156.0" layoutY="204.0" prefHeight="34.0" prefWidth="406.0" style="-fx-background-color: blue; -fx-background-radius: 22;">
+         <children>
+            <Label layoutX="141.0" layoutY="3.0" prefHeight="27.0" prefWidth="124.0" text="Allowences" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Separator layoutX="156.0" layoutY="603.0" prefHeight="2.0" prefWidth="998.0" style="-fx-background-color: blue;" />
+      <Label layoutX="162.0" layoutY="648.0" prefHeight="34.0" prefWidth="194.0" text="Salary Advanced        :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="162.0" layoutY="742.0" prefHeight="34.0" prefWidth="202.0" text="No Pay                       :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNoPay" layoutX="401.0" layoutY="742.0" prefHeight="28.0" prefWidth="213.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="696.0" layoutY="651.0" prefHeight="34.0" prefWidth="194.0" text="ETF                               :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtEtf" layoutX="910.0" layoutY="652.0" prefHeight="28.0" prefWidth="213.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSalaryAdvanced" layoutX="398.0" layoutY="651.0" onAction="#onActionId" prefHeight="28.0" prefWidth="213.0">
+         <font>
+            <Font name="Cambria" size="14.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtTotalDeductives" labelFloat="true" layoutX="907.0" layoutY="740.0" prefHeight="32.0" prefWidth="213.0">
+         <font>
+            <Font name="Cambria Italic" size="17.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="692.0" layoutY="739.0" prefHeight="34.0" prefWidth="194.0" text="Total Deductives        :">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtNetSalary" focusColor="#f50000" labelFloat="true" layoutX="1194.0" layoutY="828.0" prefHeight="39.0" prefWidth="321.0" promptText="Net Salary" unFocusColor="#e51212">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnCalculateNetSalary" buttonType="RAISED" layoutX="1246.0" layoutY="668.0" onAction="#btnCalculateNetSalaryOnAction" prefHeight="60.0" prefWidth="230.0" style="-fx-background-color: red; -fx-background-radius: 30;" text="CALCULATE SALARY" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

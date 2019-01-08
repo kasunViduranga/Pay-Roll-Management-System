@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPain" prefHeight="1003.0" prefWidth="1920.0" style="-fx-background-color: red;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.payroll_mgts.controller.DashboardController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/payroll_mgts/style/dashboard.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutY="38.0" prefHeight="994.0" prefWidth="344.0" style="-fx-background-color: #1e88e5; -fx-border-color: #1e88e5;">
+         <children>
+            <ImageView fitHeight="222.0" fitWidth="249.0" layoutX="58.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icon_payroll_380-300x300.png" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" defaultButton="true" layoutX="95.0" layoutY="841.0" onMouseClicked="#logout" prefHeight="49.0" prefWidth="147.0" style="-fx-background-radius: 22; -fx-background-color: red;" text="     Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="31.0" fitWidth="31.0" layoutX="110.0" layoutY="853.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Shutdown_104px.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="38.0" prefWidth="1920.0" style="-fx-background-color: #C3C3C3; -fx-border-color: #C3C3C3;">
+         <children>
+            <ImageView fitHeight="38.0" fitWidth="40.0" layoutX="1827.0" layoutY="1.0" onMouseClicked="#minimize" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/icons8_Minimize_Window_64px_1.png" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+      <AnchorPane layoutX="344.0" layoutY="38.0" prefHeight="86.0" prefWidth="1576.0" style="-fx-background-color: blue; -fx-border-color: blue;" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="-6.0" layoutY="622.0" onAction="#manageReport" prefHeight="72.0" prefWidth="351.0" style="-fx-background-color: blue; -fx-border-color: white;" text="REPORT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="-6.0" layoutY="409.0" onAction="#manageAttendens" prefHeight="72.0" prefWidth="351.0" style="-fx-background-color: blue; -fx-border-color: white;" text="MANAGE ATTENDENS" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="-6.0" layoutY="515.0" onAction="#manageSalary" prefHeight="72.0" prefWidth="351.0" style="-fx-background-color: blue; -fx-border-color: white;" text="MANAGE SALARY" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="-6.0" layoutY="728.0" onAction="#Setting" prefHeight="72.0" prefWidth="351.0" style="-fx-background-color: blue; -fx-border-color: white;" text="SETTING" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="dashboardPain" layoutX="344.0" layoutY="122.0" prefHeight="911.0" prefWidth="1576.0" style="-fx-background-color: white;" />
+      <JFXButton alignment="CENTER_RIGHT" buttonType="RAISED" layoutX="-6.0" layoutY="305.0" onAction="#manageEmployee" prefHeight="72.0" prefWidth="351.0" style="-fx-background-color: blue; -fx-border-color: white;" text="MANAGE EMPLOYEE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

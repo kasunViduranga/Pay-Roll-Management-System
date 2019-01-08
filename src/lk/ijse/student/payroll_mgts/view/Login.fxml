@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="mainPane" prefHeight="362.0" prefWidth="517.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.student.payroll_mgts.controller.LoginController">
+    <stylesheets>
+        <URL value="@/lk/ijse/student/payroll_mgts/style/login.css" />
+    </stylesheets>
+   <children>
+      <ImageView fitHeight="362.0" fitWidth="616.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/IMG_230594.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="171.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login Form" wrappingWidth="214.08203125">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <JFXTextField fx:id="txtUserName" focusColor="#d41093" layoutX="158.0" layoutY="120.0" prefHeight="26.0" prefWidth="239.0" promptText="User Name" style="-fx-text-inner-color: black;" styleClass="text" unFocusColor="#201f1f">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="txtPassword" focusColor="#d41093" layoutX="158.0" layoutY="196.0" prefHeight="39.0" prefWidth="239.0" promptText="Password" style="-fx-text-inner-color: black;" unFocusColor="#201f1f">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton layoutX="286.0" layoutY="257.0" onMouseClicked="#isLogIn" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: #0031ff;" text="LOGIN" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="406.0" layoutY="257.0" onMouseClicked="#cancel" prefHeight="22.0" prefWidth="98.0" style="-fx-background-color: #ff2222;" text="CANCEL" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnNewUser" layoutX="158.0" layoutY="257.0" onMouseClicked="#isnewUser" prefHeight="39.0" prefWidth="98.0" style="-fx-background-color: green;" text="SignIN" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="19.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="46.0" fitWidth="48.0" layoutX="90.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_User_Male_104px.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="39.0" fitWidth="41.0" layoutX="93.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/icons8_Password_104px.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
